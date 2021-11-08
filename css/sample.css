@@ -1,43 +1,128 @@
 html {
-    position: relative;
-    min-height: 100%;
-  }
-  body {
-    text-align: center;
-  }
-  .main-header {
-    padding-bottom: 15%;
-    width: 100%;
-    background-size: cover;
-    background-image: url("../images/header.jpg");
-    background-attachment: fixed;
-  }
-  /* ここから */
-  header {
-  }
-  header ul {
-  }
-  header ul a {
-  }
-  header li {
-  }
-  header ul:after {
-  }
-  /* ここまでがheader部分の実装 */
-  .main-header img {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+.main-header {
+  padding-bottom: 25%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 50px;
+}
+
+/* ここから */
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #2B2B2B;
+  position: absolute;
+  top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+header ul .left {
+  float: left;
+}
+
+header ul .right {
+  float: right;
+}
+
+header li {
+  float: left;
+  width: auto;
+}
+
+header li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ここまでがheader部分の実装 */
+
+.main-header img {
   /* main画像（白い「Achieve」の文字の画像）部分の実装 */
-  }
-  .about {
+  width: 13%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.about h1 {
   /* About Achieve部分の実装 */
-  }
-  /* ここから */
-  .function {
-  }
-  .function-images {
-  }
-  .function-image {
-  }
-  /* ここまでがfunction部分の実装 */
-  footer {
+  font-size: 1.5rem;
+}
+
+.about p {
+  font-size: 0.8rem;
+}
+
+/* ここから */
+
+.function {
+  background-color: #D3D3D3;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.function-images {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.function-image {
+  float: left;
+  padding: 0 10px;
+}
+
+.function-image img {
+  width: 30%;
+}
+
+/* ここまでがfunction部分の実装 */
+
+footer {
   /* footer部分の実装 */
-  }
+  background-color: #283A4B;
+  height: 70px;
+  position: relative;
+  bottom: 0;
+}
+
+footer .footer-sentences {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.8rem;
+}
